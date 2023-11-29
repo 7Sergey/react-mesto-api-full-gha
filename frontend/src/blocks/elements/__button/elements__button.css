@@ -1,0 +1,19 @@
+.elements__button {
+  background-image: url("../../../images/likeb.svg");
+  border: none;
+  width: 22px;
+  height: 19px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 1px;
+  box-sizing:border-box;
+  background-color: #fff;
+}
+
+
+.elements__button:hover {
+  opacity: 0.6;
+}
+

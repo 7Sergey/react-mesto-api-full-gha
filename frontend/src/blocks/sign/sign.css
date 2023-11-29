@@ -1,0 +1,12 @@
+.sign {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14 * 100%);
+  text-align: center;
+  color: #fff;
+}

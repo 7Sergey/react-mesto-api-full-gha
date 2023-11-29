@@ -1,0 +1,13 @@
+.sign__input {
+  margin: 0;
+  padding: 0 0 8px;
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  background: transparent;
+  border-bottom: 2px solid #cccccc;
+}

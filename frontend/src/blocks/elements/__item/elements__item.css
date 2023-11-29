@@ -1,0 +1,11 @@
+.elements__item {
+  width: 100%;
+  max-width: 282px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  max-height: 361px;
+  box-sizing: border-box;
+  position: relative;
+}
