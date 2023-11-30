@@ -9,12 +9,11 @@ const NotFoundError = require('../errors/not-found')
 
 const router = express.Router()
 
-
-app.get('/crash-test', () => {
+router.get('/crash-test', () => {
   setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
+    throw new Error('Сервер сейчас упадёт')
+  }, 0)
+})
 // роуты логина и регистрации
 router.post('/signin', login)
 
