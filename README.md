@@ -12,5 +12,6 @@
 
 IP-адрес 158.160.36.11
 
-Frontend fedorov.nomoredomainsmonster.ru
-Backend api.fedorov.nomoredomainsmonster.ru
+Frontend https://fedorov.nomoredomainsmonster.ru
+
+Backend https://api.fedorov.nomoredomainsmonster.ru
