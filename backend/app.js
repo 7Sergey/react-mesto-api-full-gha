@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser')
 
 const { requestLogger, errorLogger } = require('./middlewares/logger')
 const router = require('./routes/router')
+
 const {
   CLIENT_ERROR_CODE,
   MONGO_DUPLICATE_ERROR_CODE,
