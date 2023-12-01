@@ -63,11 +63,6 @@ app.use((error, req, res, next) => {
       .status(CLIENT_ERROR_CODE)
       .send({ message: 'Ошибка валидации полей' })
   }
-  if (error.name === 'ValidationError') {
-    return res
-      .status(CLIENT_ERROR_CODE)
-      .send({ message: 'Ошибка валидации полей' })
-  }
 
   return res.status(statusCode).send({
     // проверяем статус и выставляем сообщение в зависимости от него

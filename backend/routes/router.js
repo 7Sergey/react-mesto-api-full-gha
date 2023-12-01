@@ -15,7 +15,16 @@ router.get('/crash-test', () => {
   }, 0)
 })
 // роуты логина и регистрации
-router.post('/signin', login)
+router.post(
+  '/signin',
+  celebrate({
+    body: Joi.object().keys({
+      email: Joi.string().required().min(2).max(30),
+      password: Joi.string().required().min(8),
+    }),
+  }),
+  login,
+)
 
 router.post(
   '/signup',
