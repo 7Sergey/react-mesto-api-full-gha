@@ -126,19 +126,6 @@ const login = (req, res, next) => {
     .catch(next)
 }
 
-const infoUser = async (req, res, next) => {
-  // Здесь вы можете использовать userId для получения информации о текущем пользователе из вашей базы данных или другого источника
-  // Пример: извлечение информации о пользователе из базы данных
-  const user = User.findOne({ id: req.cookies })
-
-  if (user) {
-    res.send({ user })
-  } else {
-    const err = new NotFoundError('Пользователь не найден')
-    next(err)
-  }
-}
-
 const getCurrentUser = async (req, res, next) => {
   try {
     const currentUser = await User.findById(req.user._id)
@@ -165,6 +152,5 @@ module.exports = {
   patchUser,
   patchAvatar,
   login,
-  infoUser,
   getCurrentUser,
 }

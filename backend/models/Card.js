@@ -10,17 +10,19 @@ const cardSchema = new mongoose.Schema(
     },
     link: {
       type: String,
-      required: true, // оно должно быть у каждого пользователя, так что имя — обязательное поле
+      required: true,
+      validate: {
+        validator: (v) => /^https?:\/\/\S+$/.test(v), // Валидация URL
+        message: 'Некорректный формат URL',
+      },
     },
     owner: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'User', // указывает на коллекцию 'User'
+      ref: 'User',
       required: true,
     },
     likes: {
-      // type: Array,
       type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
-
       default: [],
     },
     createdAt: {
