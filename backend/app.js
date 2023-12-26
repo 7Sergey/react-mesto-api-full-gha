@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+require('dotenv').config()
 const { errors } = require('celebrate')
 const helmet = require('helmet')
 const rateLimit = require('express-rate-limit')
@@ -13,8 +14,6 @@ const {
   MONGO_DUPLICATE_ERROR_CODE,
   CONFLICT_ERROR_CODE,
 } = require('./constants/constants')
-
-require('dotenv').config() // Подключаем переменные окружения из файла .env
 
 const app = express()
 const limiter = rateLimit({
