@@ -5,4 +5,4 @@
 
 
 ## Ссылки на проект
-#[Frontend](https://react-mesto-api-full-gha-alpha.vercel.app/)
+[Frontend](https://react-mesto-api-full-gha-alpha.vercel.app/)
